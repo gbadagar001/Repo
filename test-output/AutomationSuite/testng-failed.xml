@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationSuite]">
+  <test name="Test">
+    <groups>
+      <run>
+        <include name="Create"/>
+        <include name="Delete"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.practice.AT_Test_CreateUser_ATime"/>
+      <class name="com.practice.AT_Test_DeleteUser_ATime"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Create"/>
+        <include name="Delete"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.practice.AT_Test_CreateUser_ATime">
+        <methods>
+          <include name="testAT_Test_CreateUser_ATime"/>
+        </methods>
+      </class> <!-- com.practice.AT_Test_CreateUser_ATime -->
+      <class name="com.practice.AT_Test_DeleteUser_ATime">
+        <methods>
+          <include name="testAT_Test_DeleteUser_ATime"/>
+        </methods>
+      </class> <!-- com.practice.AT_Test_DeleteUser_ATime -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->

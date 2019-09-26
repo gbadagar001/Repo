@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>TestNG:  RegressionTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RegressionTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 15 23:31:54 PST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>44 seconds (44047 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Login all </td>
+</tr><tr>
+<td>Excluded groups:</td><td>Customer Billing </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Actitime.testcases.AT_Login_Invalid.testAT_Login_Invalid()'><b>testAT_Login_Invalid</b><br>Test class: com.Actitime.testcases.AT_Login_Invalid</td>
+<td></td>
+<td>3</td>
+<td>com.Actitime.testcases.AT_Login_Invalid@3e54a</td></tr>
+<tr>
+<td title='com.Actitime.testcases.AT_Login_Valid.testAT_Login_Valid()'><b>testAT_Login_Valid</b><br>Test class: com.Actitime.testcases.AT_Login_Valid<br/>
+<a href="#Output-4906239" onClick='toggleBox("Output-4906239", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4906239" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4906239">
+Logout from application<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.Actitime.testcases.AT_Login_Valid@11357e9</td></tr>
+</table><p>
+</body>
+</html>

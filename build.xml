@@ -1,0 +1,20 @@
+<project basedir="."  name="Automation">
+       <path id="ACP">
+        	<pathelement location="bin"/>
+     	    <fileset dir="jars"/>
+   	   </path>
+	
+		<target name="compile">
+			<javac srcdir="src" destdir="bin" classpath="ACP"/>
+		</target>
+   	   
+	    <target name="run" depends="compile">
+	    	<java classpathref="ACP" classname="org.testng.TestNG" args="testng.xml"/>
+		</target>
+		<target name="report" depends="run" >           
+	           <xslt in="./test-output/testng-results.xml" style="./test-output/testng-results.xsl" out="./test-output/testng-results.html">
+	                 <param expression="${basedir}/test-output/" name="testNgXslt.outputDir" />
+	                 <classpath refid="ACP"/>
+	            </xslt>
+		</target> 
+</project>

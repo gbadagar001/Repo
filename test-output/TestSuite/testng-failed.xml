@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [TestSuite]" parallel="tests">
+  <parameter name="browser" value="IE"/>
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.Actitime.testcases.AT_Login_Valid">
+        <methods>
+          <include name="testAT_Login_Valid"/>
+          <include name="preCondition"/>
+          <include name="preCondition"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="postCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.Actitime.testcases.AT_Login_Valid -->
+      <class name="com.Actitime.testcases.AT_Login_Invalid">
+        <methods>
+          <include name="testAT_Login_Invalid"/>
+          <include name="preCondition"/>
+          <include name="preCondition"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.Actitime.testcases.AT_Login_Invalid -->
+      <class name="com.practice.Guru99CrossBrowserScript">
+        <methods>
+          <include name="PreCondition"/>
+          <include name="PreCondition"/>
+          <include name="PreCondition"/>
+          <include name="PostCondition"/>
+          <include name="PostCondition"/>
+          <include name="PostCondition"/>
+        </methods>
+      </class> <!-- com.practice.Guru99CrossBrowserScript -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.Actitime.testcases.AT_Login_Valid">
+        <methods>
+          <include name="testAT_Login_Valid"/>
+          <include name="preCondition"/>
+          <include name="preCondition"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="postCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.Actitime.testcases.AT_Login_Valid -->
+      <class name="com.Actitime.testcases.AT_Login_Invalid">
+        <methods>
+          <include name="testAT_Login_Invalid"/>
+          <include name="preCondition"/>
+          <include name="preCondition"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.Actitime.testcases.AT_Login_Invalid -->
+      <class name="com.practice.Guru99CrossBrowserScript">
+        <methods>
+          <include name="PreCondition"/>
+          <include name="PreCondition"/>
+          <include name="PreCondition"/>
+          <include name="PostCondition"/>
+          <include name="PostCondition"/>
+          <include name="PostCondition"/>
+        </methods>
+      </class> <!-- com.practice.Guru99CrossBrowserScript -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

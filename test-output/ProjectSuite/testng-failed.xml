@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ProjectSuite]" parallel="none">
+  <test name="RegressionTest(failed)" parallel="none">
+    <groups>
+      <run>
+        <include name="all"/>
+        <include name="Customer"/>
+        <include name="Billing"/>
+        <include name="Login"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.projectname.testcases.AT_Billing_Create">
+        <methods>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+          <include name="testAT_Billing_Duplicate"/>
+        </methods>
+      </class> <!-- com.projectname.testcases.AT_Billing_Create -->
+      <class name="com.projectname.testcases.AT_Customer_CreateDuplicate">
+        <methods>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.projectname.testcases.AT_Customer_CreateDuplicate -->
+      <class name="com.projectname.testcases.AT_Login_Invalid">
+        <methods>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.projectname.testcases.AT_Login_Invalid -->
+      <class name="com.projectname.testcases.AT_Customer_Create">
+        <methods>
+          <include name="postCondition"/>
+          <include name="testAT_Customer_Create"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.projectname.testcases.AT_Customer_Create -->
+      <class name="com.projectname.testcases.AT_Billing_Duplicate">
+        <methods>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.projectname.testcases.AT_Billing_Duplicate -->
+      <class name="com.projectname.testcases.AT_Login_Valid">
+        <methods>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.projectname.testcases.AT_Login_Valid -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [ProjectSuite] -->
