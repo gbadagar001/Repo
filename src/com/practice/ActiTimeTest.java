@@ -35,7 +35,8 @@ public class ActiTimeTest
 		System.out.println("Title2:-"+driver.getTitle());
 		System.out.println();
 		Reporter.log("Close the Browser");
-		driver.close();
+		//driver.close();
+		driver.quit();
 		
 	}
 
