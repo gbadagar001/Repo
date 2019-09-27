@@ -32,7 +32,7 @@ public class AlertConfirmationPopUp
 		driver.findElement(By.xpath("//input[@value='Archive Selected']")).click();
 		//Switching to alert and the get the message and click on OK/Cancel
 		//Explicit Wait
-	    Thread.sleep(3000);
+	    Thread.sleep(4000);
 		Alert alert=driver.switchTo().alert();
 		String message = alert.getText();
 		System.out.println(message);
